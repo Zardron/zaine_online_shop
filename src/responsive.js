@@ -13,5 +13,9 @@ export const mobile = (props) => {
     @media only screen and (max-width: 414px) {
       ${props}
     }
+
+    @media only screen and (max-width: 480px) {
+      ${props}
+    }
   `;
 };

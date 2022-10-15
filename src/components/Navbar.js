@@ -9,6 +9,7 @@ import {
   Input,
   MenuItem,
   CompanyLogoNav,
+  MenuItemLogo,
 } from "../css/Home/homeStyled";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -19,12 +20,14 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          {" "}
-          <CompanyLogoNav
-            src="https://res.cloudinary.com/dmbpo49ak/image/upload/v1665082346/popular%20items/BABE/ZA_6_qwclng.png"
-            alt="Zaine Marie"
-          />
-          ONLINE SHOP
+          <MenuItemLogo to={"/"}>
+            {" "}
+            <CompanyLogoNav
+              src="https://res.cloudinary.com/dmbpo49ak/image/upload/v1665082346/popular%20items/BABE/ZA_6_qwclng.png"
+              alt="Zaine Marie"
+            />
+            ONLINE SHOP
+          </MenuItemLogo>
         </Left>
 
         <Center>
@@ -34,14 +37,8 @@ const Navbar = () => {
           </SearchContainer>
         </Center>
         <Right>
-          <MenuItem
-            to="/register"
-          >
-            REGISTER
-          </MenuItem>
-          <MenuItem to="/login">
-            LOGIN
-          </MenuItem>
+          <MenuItem to="/register">REGISTER</MenuItem>
+          <MenuItem to="/login">LOGIN</MenuItem>
           <MenuItem to="/cart">
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlinedIcon />

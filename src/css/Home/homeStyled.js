@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
   ${mobile({ padding: "0 10px" })}
 `;
 
+
 export const Left = styled.div`
   flex: 1;
   display: flex;
@@ -32,6 +33,20 @@ export const Left = styled.div`
   font-weight: bold;
   ${mobile({ fontSize: "12px" })}
 `;
+
+export const MenuItemLogo = styled(Link)`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  ${mobile({ fontSize: "12px" })}
+`;
+
 
 export const CompanyLogo = styled.div`
   flex: 1;

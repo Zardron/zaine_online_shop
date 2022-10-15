@@ -5,7 +5,7 @@ const CategoryItem = ({ item }) => {
     <Image src={item.img}/>
     <Info>
         <Title>{item.title}</Title>
-        <Button>SHOP NOW</Button>
+        <Button to={"productlist"}>SHOP NOW</Button>
     </Info>
   </Container>;
 };

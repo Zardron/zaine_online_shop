@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   flex: 1;
@@ -31,11 +32,13 @@ export const Title = styled.h1`
   color: white;
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   border: none;
   padding: 10px;
   background-color: white;
   color: gray;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
 `;
+

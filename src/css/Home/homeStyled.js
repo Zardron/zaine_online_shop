@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   height: 80px;
@@ -82,10 +83,12 @@ export const Logo = styled.h1`
   font-weight: bold;
 `;
 
-export const MenuItem = styled.div`
+export const MenuItem = styled(Link)`
   font-size: 20px;
   cursor: pointer;
   margin-left: 25px;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
   ${mobile({ fontSize: "12px" })}
 `;

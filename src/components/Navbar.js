@@ -5,7 +5,6 @@ import {
   Left,
   Center,
   Right,
-  Language,
   SearchContainer,
   Input,
   MenuItem,
@@ -35,9 +34,15 @@ const Navbar = () => {
           </SearchContainer>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>LOGIN</MenuItem>
-          <MenuItem>
+          <MenuItem
+            to="/register"
+          >
+            REGISTER
+          </MenuItem>
+          <MenuItem to="/login">
+            LOGIN
+          </MenuItem>
+          <MenuItem to="/cart">
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlinedIcon />
             </Badge>

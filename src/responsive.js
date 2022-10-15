@@ -18,6 +18,7 @@ export const mobile = (props) => {
       ${props}
     }
 
+    /* This media query is used for: iPhone 13 Pro Max and iPhone 12 Pro Max */
     @media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
       ${props}
     }

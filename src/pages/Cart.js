@@ -2,6 +2,7 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import {
+  AddIconStyled,
   Bottom,
   Button,
   ColorDetail,
@@ -22,6 +23,8 @@ import {
   ProductVariation,
   QuantityDetail,
   QuantityInfo,
+  RemoveIconStyled,
+  Size,
   SizeDetail,
   Summary,
   SummaryItem,
@@ -81,7 +84,7 @@ const Cart = () => {
                 <VariationDetail>
                   <ColorDetail>Color:</ColorDetail>
                   <ProductColor color="black" />
-                  <SizeDetail>Size:</SizeDetail> 37.5
+                  <SizeDetail>Size: </SizeDetail> <Size>37.5</Size>
                 </VariationDetail>
               </ProductVariation>
               <UnitPriceDetail>
@@ -91,19 +94,9 @@ const Cart = () => {
               </UnitPriceDetail>
               <QuantityDetail>
                 <ProductAmountContainer>
-                  <AddIcon
-                    style={{
-                      border: "1px solid gray",
-                      padding: "3px 3px 2px 3px",
-                    }}
-                  />
+                  <AddIconStyled />
                   <ProductAmount>2</ProductAmount>
-                  <RemoveIcon
-                    style={{
-                      border: "1px solid gray",
-                      padding: "3px 3px 2px 3px",
-                    }}
-                  />
+                  <RemoveIconStyled />
                 </ProductAmountContainer>
               </QuantityDetail>
               <PriceDetail>
